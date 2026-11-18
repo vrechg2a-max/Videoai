@@ -1,0 +1,6 @@
+{
+  "name": "ClipViper AI",
+  "description": "Plataforma pessoal de automação de cortes virais 9:16 (Shorts, Reels e TikTok) para nicho Gamer e Vlogs com Gemini Search Grounding, Groq Whisper e Worker Python FFmpeg.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

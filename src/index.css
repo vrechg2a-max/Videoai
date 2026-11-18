@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-canvas: #090A0F;
+    --bg-surface: #12151F;
+    --bg-elevated: #171B28;
+    --accent-purple: #8B5CF6;
+    --accent-emerald: #10B981;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #090A0F;
+    color: #F1F5F9;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Outfit', system-ui, sans-serif;
+    text-wrap: balance;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.font-hormozi {
+  font-family: 'Montserrat', 'Outfit', sans-serif;
+  font-weight: 900;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes hormozi-pop {
+  0% {
+    transform: scale(0.84) translateY(4px);
+    opacity: 0.7;
+  }
+  55% {
+    transform: scale(1.1) translateY(-1px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-hormozi-pop {
+  animation: hormozi-pop 0.14s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090A0F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #23283A;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #363E59;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-hormozi-pop {
+    animation: none;
+  }
+}
